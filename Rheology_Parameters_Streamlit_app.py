@@ -82,9 +82,23 @@ st.markdown(
 st.markdown('<div class="title-box">Prediction of Rheological Properties of Nanoclay-Modified LC³ Systems</div>', unsafe_allow_html=True)
 
 st.write(
-    "This app predicts **Static Yield Stress (SYS)**, **Dynamic Yield Stress (DYS)**, "
-    "and **Plastic Viscosity (PV)** at 10 and 30 minutes based on your mix design inputs."
-)
+    """
+**This application is developed to predict key rheological properties, Static Yield Stress (SYS), Dynamic Yield Stress (DYS), and Plastic Viscosity (PV), at 10 and 30 minutes, based on user-defined LC³ mix design inputs.**
+
+The predictions are driven by trained machine learning based **Random Forest** models, developed from an extensive experimental dataset involving various binder compositions and nanoclay dispersion techniques. This tool is designed to support sustainable mix design, and process optimization, for forecasting the rheological performance of advanced LC³-based cementitious systems.
+
+**⚠️ Input Validation Notes:**
+
+- **Binder Composition Constraint:**
+
+The sum of the binder components, Ordinary Portland Cement (OPC), Calcined Clay (CC), Limestone Powder (LP), and Gypsum (GYP), **must equal 100%**. If the total is either more or less than 100%, the app will halt execution to prevent invalid predictions.
+
+- **Recommended Input Ranges:**
+
+All input parameters are checked against suggested value ranges. If any parameter falls outside its recommended bounds, the app will still proceed, but a cautionary message will be displayed. **Users are advised to apply thier own judgment** when interpreting results based on **out-of-range inputs**, as prediction reliability may be reduced.
+
+**This intuitive interface is suitable for both academic research and industrial implementation, particularly in developing low-carbon, high-performance binders for modern construction.**   
+""")
 
 # =========================
 # Step 1 – User Inputs
@@ -121,7 +135,7 @@ with col8:
 # =========================
 st.markdown('<div class="step-title">Step 2: Validate Inputs</div>', unsafe_allow_html=True)
 
-binder_sum = opc + cc + lp + nc + gyp
+binder_sum = opc + cc + lp + gyp
 if binder_sum != 100:
     st.error(f"❌ Binder content must equal 100%. Current sum = {binder_sum:.2f}%")
     st.stop()
@@ -252,4 +266,4 @@ else:
 # =========================
 # Footer
 # =========================
-st.markdown('<div class="footer">--- End of App ---</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">-------- End of App --------</div>', unsafe_allow_html=True)
