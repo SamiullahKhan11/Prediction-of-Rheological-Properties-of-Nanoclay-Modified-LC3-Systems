@@ -240,7 +240,7 @@ if model_SYS and model_DYS and model_PV:
             col1, col2 = st.columns(2)
 
             with col1:
-                st.subheader("Yield Stresses vs Time")
+                st.subheader("Yield Stress vs Time")
                 plt.figure(figsize=(5, 4))
                 sns.lineplot(x="Time", y="SYS (Pa)", data=df_results, marker="o", color="red", label="SYS")
                 sns.lineplot(x="Time", y="DYS (Pa)", data=df_results, marker="s", color="dodgerblue", label="DYS")
@@ -267,3 +267,4 @@ else:
 # Footer
 # =========================
 st.markdown('<div class="footer">-------- End of App --------</div>', unsafe_allow_html=True)
+
