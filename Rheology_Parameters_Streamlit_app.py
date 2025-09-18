@@ -87,7 +87,7 @@ st.write(
 
 **This application is developed to predict key rheological properties, such as static yield stress (SYS), dynamic yield stress (DYS), and plastic viscosity (PV), at 10 and 30 minutes, based on user-defined LC³ mix design inputs.**
 
-The predictions are driven by trained machine learning based **Random Forest** models, developed from an extensive experimental dataset involving various binder compositions along with nanoclay dosages. This tool is designed to support sustainable mix design, and process optimization, for forecasting the rheological performance of advanced LC³-based cementitious systems.
+The predictions are driven by trained machine learning based **Random Forest** models, developed from an extensive experimental dataset involving various binder compositions along with nanoclay dosages. This tool is designed to support sustainable mix design and process optimization by predicting the rheological performance of advanced nanoclay-modified LC³-based cementitious systems.
 
 **⚠️ Input Validation Notes:**
 
@@ -269,6 +269,7 @@ else:
 # Footer
 # =========================
 st.markdown('<div class="footer">-------- End of App --------</div>', unsafe_allow_html=True)
+
 
 
 
