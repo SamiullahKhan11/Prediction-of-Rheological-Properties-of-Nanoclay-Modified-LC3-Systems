@@ -83,6 +83,7 @@ st.markdown('<div class="title-box">Prediction of Rheological Properties of Nano
 
 st.write(
     """
+
 **This application is developed to predict key rheological properties, Static Yield Stress (SYS), Dynamic Yield Stress (DYS), and Plastic Viscosity (PV), at 10 and 30 minutes, based on user-defined LC³ mix design inputs.**
 
 The predictions are driven by trained machine learning based **Random Forest** models, developed from an extensive experimental dataset involving various binder compositions and nanoclay dispersion techniques. This tool is designed to support sustainable mix design, and process optimization, for forecasting the rheological performance of advanced LC³-based cementitious systems.
@@ -267,4 +268,5 @@ else:
 # Footer
 # =========================
 st.markdown('<div class="footer">-------- End of App --------</div>', unsafe_allow_html=True)
+
 
