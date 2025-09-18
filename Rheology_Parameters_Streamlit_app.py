@@ -93,7 +93,7 @@ The predictions are driven by trained machine learning based **Random Forest** m
 
 - **Binder Composition Constraint:**
 
-The sum of the binder components, ordinary portland cement (OPC), calcined clay (CC), limestone powder (LP), and gypsum (GYP), **must equal 100%**. If the total is either more or less than 100%, the app will halt execution to prevent invalid predictions.
+The sum of the binder components, ordinary portland cement (OPC), calcined clay (CC), limestone powder (LP), and gypsum (GYP), **must be equal to 100%**. If the total is either more or less than 100%, the app will halt execution to prevent invalid predictions.
 
 - **Recommended Input Ranges:**
 
@@ -269,6 +269,7 @@ else:
 # Footer
 # =========================
 st.markdown('<div class="footer">-------- End of App --------</div>', unsafe_allow_html=True)
+
 
 
 
