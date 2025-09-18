@@ -97,7 +97,7 @@ The sum of the binder components, ordinary portland cement (OPC), calcined clay 
 
 - **Recommended Input Ranges:**
 
-All input parameters are checked against suggested value ranges. If any parameter falls outside its recommended bounds, the app will still proceed, but a cautionary message will be displayed. **Users are advised to apply thier own judgment** when interpreting results based on **out-of-range inputs**, as prediction reliability may be reduced.
+All input parameters are checked against suggested value ranges. If any parameter falls outside its recommended bounds, the app will still proceed, but a cautionary message will be displayed. **Users are advised to use their own judgment** when interpreting results based on **out-of-range inputs**, as prediction reliability may be reduced.
 
 **This intuitive interface is suitable for both academic research and industrial implementation, particularly in developing low-carbon, high-performance binders for modern construction.**   
 """)
@@ -269,6 +269,7 @@ else:
 # Footer
 # =========================
 st.markdown('<div class="footer">-------- End of App --------</div>', unsafe_allow_html=True)
+
 
 
 
