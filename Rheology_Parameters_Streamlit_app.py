@@ -27,7 +27,7 @@ st.set_page_config(
 )
 
 # =========================
-# Custom Styling (Fonts & Layout)
+# Custom Styling
 # =========================
 st.markdown(
     """
@@ -47,22 +47,6 @@ st.markdown(
             font-size: 34px !important;
             font-weight: bold;
             margin-bottom: 10px;
-        }
-
-        /* Developer Information */
-        .developer-box {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 35px;
-            line-height: 1.8;
-        }
-
-        .developer-name {
-            color: #1f1f1f;
-        }
-
-        .developer-affiliation {
-            color: #444444;
         }
 
         /* Section Titles */
@@ -126,23 +110,21 @@ st.markdown(
 # =========================
 st.markdown(
     """
-    <div style="text-align: center; margin-top: 10px; margin-bottom: 40px;">
+    <div style='text-align: center;'>
 
-        <p style="font-size:20px;">
-            <b>Developed by: Munir Iqbal</b>
-        </p>
+    **Developed by: Munir Iqbal**
 
-        <p style="font-size:18px;">
-            <b><i>
-            Department of Mechanics and Civil Engineering,<br>
-            University of Arizona, Tucson, AZ 85719, USA
-            </i></b>
-        </p>
+    ***Department of Mechanics and Civil Engineering,  
+    University of Arizona, Tucson, AZ 85719, USA***
 
     </div>
     """,
     unsafe_allow_html=True
 )
+
+# Add spacing
+st.write("")
+st.write("")
 
 # =========================
 # Description
@@ -170,13 +152,12 @@ If the total is either more or less than 100%, the app will halt execution to pr
 #### Recommended Input Ranges
 All input parameters are checked against suggested value ranges. If any parameter falls outside its recommended bounds, the app will still proceed, but a cautionary message will be displayed.
 
-**Users are advised to use their own judgment** when interpreting results based on out-of-range inputs, as prediction reliability may be reduced.
+**Users are advised to use their own judgment** when interpreting results based on out-of-range inputs, as prediction reliability may be reduced.**
 
 **This intuitive interface is suitable for both academic research and industrial implementation, particularly in developing low-carbon, high-performance binders for modern construction.**
 
 """
 )
-
 
 # =========================
 # Step 1 – User Inputs
