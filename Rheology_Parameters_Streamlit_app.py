@@ -79,28 +79,65 @@ st.markdown(
 # =========================
 # Title
 # =========================
-st.markdown('<div class="title-box">Prediction of Rheological Properties of Nanoclay-Modified LC³ Systems</div>', unsafe_allow_html=True)
+st.markdown(
+    '''
+    <div class="title-box">
+        Prediction of Rheological Properties of Nanoclay-Modified LC³ Systems
+    </div>
+    ''',
+    unsafe_allow_html=True
+)
 
+
+# =========================
+# Developer Information
+# =========================
+st.markdown(
+    """
+    <div class="developer-box">
+        <div class="developer-name">
+            Developed by: Munir Iqbal
+        </div>
+        <div class="developer-affiliation">
+            Department of Mechanics and Civil Engineering, University of Arizona, Tucson, AZ 85719, USA
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# =========================
+# Description
+# =========================
 st.write(
-    
     """
 
 **This application is developed to predict key rheological properties, such as static yield stress (SYS), dynamic yield stress (DYS), and plastic viscosity (PV), at 10 and 30 minutes, based on user-defined LC³ mix design inputs.**
 
 The predictions are driven by trained machine learning based **Random Forest** models, developed from an extensive experimental dataset involving various binder compositions along with nanoclay dosages. This tool is designed to support sustainable mix design and process optimization by predicting the rheological performance of advanced nanoclay-modified LC³-based cementitious systems.
 
-**⚠️ Input Validation Notes:**
+### ⚠️ Input Validation Notes
 
-- **Binder Composition Constraint:**
+#### Binder Composition Constraint
+The sum of the binder components:
+- Ordinary Portland Cement (OPC)
+- Calcined Clay (CC)
+- Limestone Powder (LP)
+- Gypsum (GYP)
 
-The sum of the binder components, ordinary portland cement (OPC), calcined clay (CC), limestone powder (LP), and gypsum (GYP), **must be equal to 100%**. If the total is either more or less than 100%, the app will halt execution to prevent invalid predictions.
+**must be equal to 100%**.
 
-- **Recommended Input Ranges:**
+If the total is either more or less than 100%, the app will halt execution to prevent invalid predictions.
 
-All input parameters are checked against suggested value ranges. If any parameter falls outside its recommended bounds, the app will still proceed, but a cautionary message will be displayed. **Users are advised to use their own judgment** when interpreting results based on **out-of-range inputs**, as prediction reliability may be reduced.
+#### Recommended Input Ranges
+All input parameters are checked against suggested value ranges. If any parameter falls outside its recommended bounds, the app will still proceed, but a cautionary message will be displayed.
 
-**This intuitive interface is suitable for both academic research and industrial implementation, particularly in developing low-carbon, high-performance binders for modern construction.**   
-""")
+**Users are advised to use their own judgment** when interpreting results based on out-of-range inputs, as prediction reliability may be reduced.
+
+**This intuitive interface is suitable for both academic research and industrial implementation, particularly in developing low-carbon, high-performance binders for modern construction.**
+
+"""
+)
 
 # =========================
 # Step 1 – User Inputs
