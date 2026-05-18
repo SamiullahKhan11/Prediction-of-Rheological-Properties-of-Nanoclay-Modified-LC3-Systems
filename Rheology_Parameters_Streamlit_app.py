@@ -21,7 +21,10 @@ model_PV = load_model("GUI_PV.joblib")
 # =========================
 # Page Config
 # =========================
-st.set_page_config(page_title="Prediction of Rheological properties", layout="wide")
+st.set_page_config(
+    page_title="Prediction of Rheological Properties",
+    layout="wide"
+)
 
 # =========================
 # Custom Styling (Fonts & Layout)
@@ -29,18 +32,40 @@ st.set_page_config(page_title="Prediction of Rheological properties", layout="wi
 st.markdown(
     """
     <style>
+
         html, body, [class*="css"] {
             font-size: 18px !important;
         }
+
+        /* Title Box */
         .title-box {
             background-color: DodgerBlue;
             color: white;
-            padding: 15px;
+            padding: 18px;
             border-radius: 10px;
             text-align: center;
             font-size: 34px !important;
             font-weight: bold;
+            margin-bottom: 10px;
         }
+
+        /* Developer Information */
+        .developer-box {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        .developer-name {
+            color: #1f1f1f;
+        }
+
+        .developer-affiliation {
+            color: #444444;
+        }
+
+        /* Section Titles */
         .step-title {
             font-size: 24px !important;
             font-weight: bold;
@@ -48,20 +73,27 @@ st.markdown(
             margin-top: 20px;
             margin-bottom: 10px;
         }
+
+        /* Number Input Styling */
         .stNumberInput input {
             font-size: 20px !important;
             height: 55px !important;
         }
+
         div[data-testid="stNumberInput"] label {
             font-size: 18px !important;
             font-weight: bold;
         }
+
+        /* Footer */
         .footer {
             margin-top: 30px;
             text-align: center;
             font-size: 16px !important;
             color: gray;
         }
+
+        /* Button Styling */
         div.stButton > button:first-child {
             background-color: red;
             color: white;
@@ -71,6 +103,7 @@ st.markdown(
             width: 100%;
             height: 50px;
         }
+
     </style>
     """,
     unsafe_allow_html=True
@@ -88,19 +121,23 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 # =========================
 # Developer Information
 # =========================
 st.markdown(
     """
     <div class="developer-box">
+
         <div class="developer-name">
-            Developed by: Munir Iqbal
+            <b>Developed by: Munir Iqbal</b>
         </div>
+
         <div class="developer-affiliation">
-            Department of Mechanics and Civil Engineering, University of Arizona, Tucson, AZ 85719, USA
+            <b><i>Department of Mechanics and Civil Engineering, University of Arizona, Tucson, AZ 85719, USA</i></b>
         </div>
+
+        <br><br>
+
     </div>
     """,
     unsafe_allow_html=True
@@ -138,6 +175,7 @@ All input parameters are checked against suggested value ranges. If any paramete
 
 """
 )
+
 
 # =========================
 # Step 1 – User Inputs
