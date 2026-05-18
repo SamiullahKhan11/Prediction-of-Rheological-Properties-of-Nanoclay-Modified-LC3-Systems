@@ -126,20 +126,18 @@ st.markdown(
 # =========================
 st.markdown(
     """
-    <div class="developer-box">
+    <div style="text-align: center; margin-top: 10px; margin-bottom: 40px;">
 
-        <div class="developer-name">
+        <p style="font-size:20px;">
             <b>Developed by: Munir Iqbal</b>
-        </div>
+        </p>
 
-        <div class="developer-affiliation">
+        <p style="font-size:18px;">
             <b><i>
-            Department of Mechanics and Civil Engineering, 
+            Department of Mechanics and Civil Engineering,<br>
             University of Arizona, Tucson, AZ 85719, USA
             </i></b>
-        </div>
-
-        <br><br>
+        </p>
 
     </div>
     """,
