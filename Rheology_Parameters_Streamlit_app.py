@@ -133,7 +133,10 @@ st.markdown(
         </div>
 
         <div class="developer-affiliation">
-            <b><i>Department of Mechanics and Civil Engineering, University of Arizona, Tucson, AZ 85719, USA</i></b>
+            <b><i>
+            Department of Mechanics and Civil Engineering, 
+            University of Arizona, Tucson, AZ 85719, USA
+            </i></b>
         </div>
 
         <br><br>
